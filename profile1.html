@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title></title>
+    <style>
+        
+        body{
+            font-family: 'Markazi Text', serif;
+        }
+        .sidebar-header img{
+            width: 100px;
+            height: 100px;
+            margin: 0 22%;
+        }
+        .container .row .edu{
+/*            background-color: aqua;*/
+            
+        }
+        .container .row .edu ul li{
+            list-style: none;
+        }
+        .badge2{
+                box-shadow: -3px 0px 7px -3px rgba(68, 68, 68, 0.5);
+            background-color: #5298c1;
+/*                margin-left: -1%;*/
+        }
+        .badge1{
+            background-color: #43b0f1;
+        }
+        .edu h2{
+            text-align: center;
+        }
+        .row32 .col32 ul li{
+            list-style: square!important;
+            color: gray;
+        }
+/*
+        .awards h1{
+            text-align: center;
+        }
+*/
+    </style>
+
+    <!-- Bootstrap CSS CDN -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="profile1.css">
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="asserts/images/logo%20(1).png" alt="">
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a  href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#departmentSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Departments</a>
+                    <ul class="collapse list-unstyled" id="departmentSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li >
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                   <li >
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Centres & Facilities</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#academicSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Academics</a>
+                    <ul class="collapse list-unstyled" id="academicSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                   <a href="#">Directorate</a>
+                </li>
+                <li>
+                    <a href="#deanSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Deans</a>
+                    <ul class="collapse list-unstyled" id="deanSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#placeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Placements</a>
+                    <ul class="collapse list-unstyled" id="placeSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#csSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Campus Services</a>
+                    <ul class="collapse list-unstyled" id="csSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Webmail</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Old Website</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hindi Website</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Radio 90.4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Giving Back</a>
+                            </li>
+                            <li>
+                                <form class="form-inline">
+                                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                  <button class="btn btn-outline-dark" type="submit">Search</button>
+                                </form>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                          <img class="card-img-top" src="asserts/images/a-k-ghosh.jpg" alt="Card image cap">
+                          <div class="card-body">
+                           <h3>A. K. Ghosh</h3>
+                           <h5>PhD (IIT Kanpur)</h5>
+                           <h6>Professor, Department of Aerospace Engineering</h6>
+                            <p class="card-text">Email: akg[AT]iitk.ac.in <br>
+
+                            Office Phone: 0512-259-7716</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col edu">
+                       <h2>EDUCATION</h2>
+                                   <div class="line"></div>
+                        <ul>
+                            <li>
+                            <div><h3><span class="badge badge1">PhD</span><span class="badge badge2">1988</span></h3></div>
+                            <div class="discription">
+                                <p>PhD (Aerospace Engineering), IIT Kanpur,1998.</p>
+                            </div>
+                            </li>
+                            <li>
+                                <div><h3><span class="badge badge1">MTECH</span><span class="badge badge2">1989</span></h3></div>
+                                <div class="discription">
+                                <p>M.Tech (Aerospace Engineering), IIT Kanpur,1989.</p>
+                            </div>
+                            </li>
+                            <li>
+                                <div><h3><span class="badge badge1">BTECH</span><span class="badge badge2">1982</span></h3></div>
+                                <div class="discription">
+                                    <p>B.Tech (Aerospace Engineering), IIT Kanpur,1982.</p></div>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="row row32">
+                            <div class="col col32">
+                                <h5>RESEARCH INTEREST</h5>
+                                <ul>
+                                    <li>Flight Mechanics</li>
+                                    <li>Flight Testing and Parameter Estimation from flight data</li>
+                                    <li>Neural modeling Design of Air Borne stores: Aircraft Bombs</li>
+                                    <li>Artillery shells and Rockets Design of Control law of guided missiles</li>
+                                    <li>Design of Unmanned Air Vehicle</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+<!--
+            <h2>Collapsible Sidebar Using Bootstrap 4</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+-->
+
+            <div class="line"></div>
+            
+            <h1>Selected Publication, <span>2002-2013</span></h1>
+<div class="flex-parent">
+	<div class="input-flex-container">
+		<div class="input">
+			<span data-year="2002" data-info="Journal of Aircraft"></span>
+		</div>
+		<div class="input">
+			<span data-year="2007" data-info="The Aeronautical Journal"></span>
+		</div>
+		<div class="input active">
+			<span data-year="2009" data-info="Aeronautical Journal"></span>
+		</div>
+		<div class="input">
+			<span data-year="2012" data-info="Journal of Aircraft"></span>
+		</div>
+		<div class="input">
+			<span data-year="2013" data-info="Journal of Aerospace Engineering"></span>
+		</div>
+		<div class="input">
+		</div>
+		<div class="input">
+		</div>
+		<div class="input">
+		</div>
+		<div class="input">
+		</div>
+		<div class="input">
+		</div>
+	</div>
+	<div class="description-flex-container">
+		<p>Ghosh, A. K., and Raisinghani S.C., "Parameter Estimation from Flight Data of an Unstable Aircraft using Neural Networks", Journal of Aircraft, Vol. 39,No. 5, Sept. Oct. 2002, pp. 892-894.</p>
+		<p>Ghosh, A. K., and S. Singh, "Estimation of lateral-directional parameters from real flight data using neural networks based modified delta method", The Aeronautical Journal, UK, October 2007, Vol. 111, Paper No. 1124.</p>
+		<p class="active">Ghosh, A. K., and Peyada, N. K., "Aircraft Parameter Estimation using New Filtering Technique based on Neural Network and Gauss-Newton Method", Aeronautical Journal, UK, Vol. 113, No. 1142, April 2009, pp. 243-252.</p>
+		<p>Ghosh, A. K., and Rakesh Kumar, "Nonlinear Modeling of Cascade Fin Aerodynamic using Kirchhoff's Steady-stall Model", Journal of Aircraft, AIAA, USA, Vol. 49, No. 1, Jan.-Feb. 2012, pp. 315-319.</p>
+		<p>Ghosh, A. K., Misra, A., and Rakesh Kumar, "Parameter Estimation from Flight Data of Hansa-3 Aircraft using Quasi-steady Stall Modeling", Journal of Aerospace Engineering, ASCE, USA, Vol. 26, No. 3,July, 2013.</p>
+	</div>
+</div>
+
+
+            <div class="line"></div>
+
+            
+              <div class="awards">
+                 <h1>Awards & Fellowships</h1>
+                  <ul>
+                      <li>Recipient of DRDO Technology Award, 1993.</li>
+                      <li>Honored by DRDO Executive Board for successfully designed,fabricated and test flown Vertical tail less Aura scaled flight configuration.</li>
+                      <li>Letter of appreciation for identifying the dynamic stability problem associated with the artillery rocket configuration –PINAKA MK-II at Mach 3.6</li>
+                      <li>Letter of appreciation for design, analysis and flight testing of AEROSTAT(2000 cubic meter) at Airstrip,IIT Kanpur</li>
+                      <li>Appreciation by senate IIT Kanpur for excellence in teaching on many occasions.</li>
+                  </ul>
+              </div>
+
+        </div>
+    </div>
+
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="asserts/javascript/timeline.js"></script>
+<script>
+
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    	
+</body>
+
+</html>

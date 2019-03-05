@@ -1,0 +1,9 @@
+$('#menu-button4').click(function(e){
+    e.stopPropagation();
+     $('#hide-menu4').toggleClass('show-menu4');
+    $('.menu-button4').toggleClass('active');
+    $('.departmentspan').toggleClass('active');
+});
+$('#hide-menu4').click(function(e){
+    e.stopPropagation();
+});

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="asserts/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+    :root {
+  --bg: #522452; 
+  --c1: #E55D4A;
+  --c2: #AB2F52;
+  --c3: #E88554;
+  --c4: #FFAF53;
+  --c5: #522452;
+
+  --s: 100px;
+}
+        
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/*
+html,body,.wrapper {
+  height: 100%;
+  width: 100%;
+}
+*/
+
+/*
+body {
+  background: var(--bg);
+  font-family: "Open Sans", sans-serif;
+}
+*/
+
+.wrapper0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    position: absolute;
+    bottom: 50%;
+}
+
+#container0,.item0, #icon0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu0 {
+  display: flex;
+  overflow: hidden;
+  background: var(--c2);
+  border-radius: var(--s);
+  transition: width .5s ease;
+  width: calc(var(--s) * 0);
+  box-shadow: 0 0 1em 0 rgba(28, 12, 28, 0.7);
+  margin-right: 10px;
+}
+
+#icon0:before{
+  position: absolute;
+  left: -8px;
+  content:"";
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  border-right: 10px solid var(--c3);
+  transition: border .5s ease;
+}
+  #icon0{
+  text-align: center;
+  width: 50px;
+  height: 50px;
+ transition: background .5s ease;
+  border-radius: var(--s);
+  cursor: pointer;
+  position: relative;
+  background: var(--c3);
+  color: var(--c2);
+  box-shadow: 0 0 1em 0 rgba(28, 12, 28, 0.4);
+        }
+.item0 {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+/*  padding: calc( var(--s)/ 2 );*/
+    
+/*  font-size: 1.5rem;*/
+  transition: background .5s ease;
+  border-radius: var(--s);
+  cursor: pointer;
+        padding: 0 10%;
+    background: var(--c2);
+  color: var(--c4);
+}
+
+
+.item0:hover {
+  background: var(--c1);
+}
+
+#icon0:hover {
+  background: var(--c4);
+}
+
+#icon0:hover:before {
+  border-right: 10px solid var(--c4);
+}
+/*
+        #menu0{
+            width: 0px ;
+        }
+*/
+/* @media screen and (max-width: 600px) {
+  :root {
+    --s: 10px;
+  }
+  #menu {
+    border-radius: 100px;
+  } 
+  .item, #icon {
+    font-size: 1rem;
+  }
+} */
+    
+    </style>
+</head>
+<body>
+    <div class = wrapper0>
+  <div id = "container0">
+    <div id = "menu0">
+      <div class = "item0">social media</div>
+      <div class = "item0">News & Events</div>
+      <div class = "item0">Quick links</div>
+      <div class = "item0">Campus service</div>
+      <div class = "item0">Departments</div>
+    </div>
+    <div id = "icon0" onclick="expand()"><i class="fa fa-plus"></i></div>
+  </div>
+</div>
+       <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+       <script>
+    var bodyStyles = window.getComputedStyle(document.body); 
+var divsize = bodyStyles.getPropertyValue('--s');
+var expanded = false;
+
+function expand() {
+  var menu = document.getElementById('menu0');
+  if (expanded === true) {
+    menu.style.width = parseInt(divsize, 10) * 0 + "px";
+    expanded = false;
+  } 
+  else if(expanded === false){
+    menu.style.width = parseInt(divsize, 10) * menu.childElementCount + "px";
+    expanded = true;
+  }
+}
+
+    
+    </script>
+</body>
+</html>
